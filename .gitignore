@@ -1,0 +1,5 @@
+# Aqui los archivos y carpetas a ignorar en el versionado
+.classpath
+.project
+.settings/
+bin/
