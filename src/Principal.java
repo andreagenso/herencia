@@ -1,44 +1,65 @@
 import code.animal.*;
-import code.top.Animal;
+import code.top.AnimalVertebrado;
+import code.lib.EstadoMetamorfosis;
+import code.lib.TipoReproduccion;
+import code.sangre.*;
 
 public class Principal {
 
 	public static void main(String[] args) {
-		/*
-		Animal frog = new Sapo("Permiable por agua, lycra","Piernas",4,"Carnivoro","Caminar, nadar, saltar","Sapo","Poner huevos",37.05,44.88,"Adulto");	
+		
+		AnimalVertebrado frog = new Sapo("Permiable por agua, lycra","Piernas",4,
+				"Carnivoro","Caminar, nadar, saltar","Sapo",
+				TipoReproduccion.OVULIPARO,37.05,44.88, EstadoMetamorfosis.ADULTO);	
 		System.out.println(frog.mostrarClasificacionCientifica());
 		System.out.println("\n");
-		frog.mostrarAnimal();
+		frog.mostrarAnimalVertebrado();
 		System.out.println("\n");
 		frog.mostrarForma();
 		System.out.println("\n");
 		((SangreFria) frog).calcularTempActual();
+		System.out.println("------------------------------------------------------\n");
 		
-		Animal chameleon = new Camaleon("Escamas","Piernas",4,"Carnivoro","Arrastrar","Camaleon","Oviparo",38.71,39.12,"Squamata");
+		AnimalVertebrado chameleon = new Camaleon("Escamas","Piernas",4,
+				"Carnivoro","Arrastrar","Camaleon",TipoReproduccion.OVIPARO,38.71,39.12,"Squamata");
 		System.out.println(chameleon.mostrarClasificacionCientifica());
 		System.out.println("\n");
-		chameleon.mostrarAnimal();
+		chameleon.mostrarAnimalVertebrado();
 		System.out.println("\n");
 		chameleon.mostrarForma();
 		System.out.println("\n");
 		((SangreFria) chameleon).calcularTempActual();
+		System.out.println("------------------------------------------------------\n");
 		
-		Animal salmon = new Salmon("Escamas","Aletas",5,"Omnivoro","Nadar","Salmon","Poner huevos",44.45,44.45,2,3);
+		AnimalVertebrado salmon = new Salmon("Escamas","Aletas",5,"Omnivoro",
+				"Nadar","Salmon",TipoReproduccion.OVULIPARO,44.45,44.45,2,3);
 		System.out.println(salmon.mostrarClasificacionCientifica());
 		System.out.println("\n");
-		salmon.mostrarAnimal();
+		salmon.mostrarAnimalVertebrado();
 		System.out.println("\n");
 		salmon.mostrarForma();
 		System.out.println("\n");
-		((SangreFria) salmon).calcularTempActual();
-		*/
+		((SangreFria) salmon).calcularTempActual();		
+		System.out.println("------------------------------------------------------\n");
 		
-		Animal gorrion = new GorrionComun("Plumas","Alas",2,"Herbivoro","Volar","Gorrion Comun","Poner huevos","Evaporation",21.082);
+		AnimalVertebrado gorrion = new GorrionComun("Plumas","Alas",2,"Herbivoro",
+				"Volar","Gorrion Comun",TipoReproduccion.OVIPARO,"Evaporation",21.082);
 		System.out.println(gorrion.mostrarClasificacionCientifica());
 		System.out.println("\n");
-		gorrion.mostrarAnimal();
+		gorrion.mostrarAnimalVertebrado();
 		System.out.println("\n");
 		gorrion.mostrarForma();
 		System.out.println("\n");
+		System.out.println("------------------------------------------------------\n");
+		
+		AnimalVertebrado perro = new Perro("Pelo","Patas",4,"Omnivoro",
+				"Caminar","Perro labrador",TipoReproduccion.VIVIPARO,"No",true,10);
+		System.out.println(perro.mostrarClasificacionCientifica());
+		System.out.println("\n");
+		perro.mostrarAnimalVertebrado();
+		System.out.println("\n");
+		perro.mostrarForma();
+		System.out.println("\n");
+		System.out.println("------------------------------------------------------\n");
 	}
 }

@@ -1,11 +1,15 @@
 package code.animal;
+
 import code.clasificacion.Anfibio;
+import code.lib.TipoReproduccion;
+import code.lib.EstadoMetamorfosis;
 
 public class Sapo extends Anfibio {
 
-	public Sapo(String tipoPiel, String tipoExtremidades, int numExtremidades, String tipoAlimentacion,
-			String tipoMobilidad, String nombre, String tipoReproduccion, double tempCuerpoActual,
-			double tempAmbiente, String estadoMetamorfosis) {
+	public Sapo(String tipoPiel, String tipoExtremidades, int numExtremidades, 
+			String tipoAlimentacion, String tipoMobilidad, String nombre, 
+			TipoReproduccion tipoReproduccion, double tempCuerpoActual,
+			double tempAmbiente, EstadoMetamorfosis estadoMetamorfosis) {
 		super(tipoPiel, tipoExtremidades, numExtremidades, tipoAlimentacion, tipoMobilidad,
 				nombre, tipoReproduccion, tempCuerpoActual, tempAmbiente, estadoMetamorfosis);
 	}

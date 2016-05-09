@@ -1,17 +1,22 @@
 package code.clasificacion;
+
 import code.sangre.SangreTibia;
+import code.lib.TipoReproduccion; 
 
 public abstract class Mamifero extends SangreTibia {
 	
 	// atributos
-	protected Boolean glandulasMamarias;
+	protected Boolean produceLeche;
+	protected int nroPezones;
 	
 	public Mamifero(String tipoPiel, String tipoExtremidades,
 			int numExtremidades, String tipoAlimentacion, String tipoMobilidad,
-			String nombre, String tipoReproduccion, String eliminExcesoCalor, Boolean glandulasMamarias) {
+			String nombre, TipoReproduccion tipoReproduccion, String eliminExcesoCalor, 
+			Boolean produceLeche, int numPezones) {
 		super(tipoPiel, tipoExtremidades, numExtremidades, tipoAlimentacion,
 				tipoMobilidad, nombre, tipoReproduccion, eliminExcesoCalor);
-		this.glandulasMamarias = glandulasMamarias;
+		this.produceLeche= produceLeche;
+		this.nroPezones = numPezones;
 	}
 	
 	// metodos
@@ -21,9 +26,12 @@ public abstract class Mamifero extends SangreTibia {
 		return (super.mostrarClasificacionCientifica() + "/MAMIFERO"); 
 	}
 
-	public void mostrarAnimal() {
-		super.mostrarAnimal();
-		if (glandulasMamarias == true)
+	public void mostrarAnimalVertebrado() {
+		super.mostrarAnimalVertebrado();
+		if (produceLeche)
 			System.out.println(nombre + " PRODUCE LECHE");
+		else
+			System.out.println(nombre + " NO PRODUCE LECHE");
+		System.out.println(nombre + " NUMERO DE PEZONES " + nroPezones);
 	}
 }

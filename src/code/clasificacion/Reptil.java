@@ -1,5 +1,7 @@
 package code.clasificacion;
+
 import code.sangre.*;
+import code.lib.TipoReproduccion;
 
 public abstract class Reptil extends SangreFria {
 
@@ -11,7 +13,8 @@ public abstract class Reptil extends SangreFria {
 	
 	protected Reptil(String tipoPiel, String tipoExtremidades, int numExtremidades,
 			String tipoAlimentacion, String tipoMobilidad, String nombre,
-			String tipoReproduccion, double tempCuerpoActual, double tempAmbiente, String ordenReptil) {
+			TipoReproduccion tipoReproduccion, double tempCuerpoActual, double tempAmbiente, 
+			String ordenReptil) {
 		super(tipoPiel, tipoExtremidades, numExtremidades, tipoAlimentacion, tipoMobilidad,
 				nombre, tipoReproduccion, tempCuerpoActual, tempAmbiente);
 		this.ordenReptil = ordenReptil;
@@ -21,8 +24,8 @@ public abstract class Reptil extends SangreFria {
 		return (super.mostrarClasificacionCientifica() + "/REPTIL"); 
 	}
 	
-	public void mostrarAnimal() {
-		super.mostrarAnimal();
+	public void mostrarAnimalVertebrado() {
+		super.mostrarAnimalVertebrado();
 		System.out.println("\tPERTENENCE AL ORDEN DE REPTIL: " + ordenReptil);
 	}
 }

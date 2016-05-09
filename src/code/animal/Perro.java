@@ -1,14 +1,16 @@
 package code.animal;
 
 import code.clasificacion.Mamifero;
+import code.lib.TipoReproduccion;
 
 public class Perro extends Mamifero {
 
 	public Perro(String tipoPiel, String tipoExtremidades,
 			int numExtremidades, String tipoAlimentacion, String tipoMobilidad,
-			String nombre, String tipoReproduccion, String eliminExcesoCalor, Boolean glandulasMamarias) {
+			String nombre, TipoReproduccion tipoReproduccion, String eliminExcesoCalor, 
+			Boolean produceLeche,int nroPezones) {
 		super(tipoPiel, tipoExtremidades, numExtremidades, tipoAlimentacion,
-				tipoMobilidad, nombre, tipoReproduccion, eliminExcesoCalor,glandulasMamarias);		
+				tipoMobilidad, nombre, tipoReproduccion, eliminExcesoCalor,produceLeche, nroPezones);		
 	}
 	
 	@Override
