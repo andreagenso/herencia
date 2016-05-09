@@ -3,11 +3,27 @@ import code.sangre.*;
 
 public abstract class Reptil extends SangreFria {
 
+	// atributos
+	protected String ordenReptil; //Crocodilia, Sphenodontia, Squamata, Testudines   
+	
+	// metodos
+	abstract public void mostrarForma();
+	
+	protected Reptil(String tipoPiel, String tipoExtremidades, int numExtremidades,
+			String tipoAlimentacion, String tipoMobilidad, String nombre,
+			String tipoReproduccion, double tempCuerpoActual, double tempAmbiente, String ordenReptil) {
+		super(tipoPiel, tipoExtremidades, numExtremidades, tipoAlimentacion, tipoMobilidad,
+				nombre, tipoReproduccion, tempCuerpoActual, tempAmbiente);
+		this.ordenReptil = ordenReptil;
+	}
+
 	public String mostrarClasificacionCientifica(){
 		return (super.mostrarClasificacionCientifica() + "/REPTIL"); 
 	}
 	
 	public void mostrarAnimal() {
 		super.mostrarAnimal();
+		System.out.println("\tPERTENENCE AL ORDEN DE REPTIL: " + ordenReptil);
 	}
 }
+

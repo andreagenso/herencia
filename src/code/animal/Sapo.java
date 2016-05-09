@@ -3,8 +3,11 @@ import code.clasificacion.Anfibio;
 
 public class Sapo extends Anfibio {
 
-	public Sapo(String tipoPiel, String tipoExtremidades, int numExtremidades, String tipoAlimentacion, String tipoMobilidad, String nombre, String tipoReproduccion, double tempCuerpoActual, double tempAmbiente, String estadoMetamorfosis) {
-		super(tipoPiel, tipoExtremidades, numExtremidades, tipoAlimentacion, tipoMobilidad, nombre, tipoReproduccion, tempCuerpoActual, tempAmbiente, estadoMetamorfosis);
+	public Sapo(String tipoPiel, String tipoExtremidades, int numExtremidades, String tipoAlimentacion,
+			String tipoMobilidad, String nombre, String tipoReproduccion, double tempCuerpoActual,
+			double tempAmbiente, String estadoMetamorfosis) {
+		super(tipoPiel, tipoExtremidades, numExtremidades, tipoAlimentacion, tipoMobilidad,
+				nombre, tipoReproduccion, tempCuerpoActual, tempAmbiente, estadoMetamorfosis);
 	}
 
 	public void mostrarForma(){				

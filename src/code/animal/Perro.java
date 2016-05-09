@@ -4,12 +4,11 @@ import code.clasificacion.Mamifero;
 
 public class Perro extends Mamifero {
 
-	public Perro() {		
-	}
-
-	@Override
-	public int calcularAlimentacion(int nroKilos) {		
-		return 0;
+	public Perro(String tipoPiel, String tipoExtremidades,
+			int numExtremidades, String tipoAlimentacion, String tipoMobilidad,
+			String nombre, String tipoReproduccion, String eliminExcesoCalor, Boolean glandulasMamarias) {
+		super(tipoPiel, tipoExtremidades, numExtremidades, tipoAlimentacion,
+				tipoMobilidad, nombre, tipoReproduccion, eliminExcesoCalor,glandulasMamarias);		
 	}
 	
 	@Override

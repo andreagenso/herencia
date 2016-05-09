@@ -1,15 +1,14 @@
 package code.animal;
-
 import code.clasificacion.Pez;
 
 public class Salmon extends Pez {
 
-	public Salmon() {
-	}
-
-	@Override
-	public int calcularAlimentacion(int nroKilos) {		
-		return 0;
+	public Salmon(String tipoPiel, String tipoExtremidades,
+			int numExtremidades, String tipoAlimentacion, String tipoMobilidad,
+			String nombre, String tipoReproduccion, double tempCuerpoActual,
+			double tempAmbiente, int tipoAletasPares,int tipoAletasMediaLinea) {
+		super(tipoPiel,tipoExtremidades,numExtremidades, tipoAlimentacion,tipoMobilidad,nombre,tipoReproduccion,
+				tempCuerpoActual, tempAmbiente, tipoAletasPares, tipoAletasMediaLinea);
 	}
 	
 	@Override

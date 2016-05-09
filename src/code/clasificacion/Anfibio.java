@@ -9,8 +9,11 @@ public abstract class Anfibio extends SangreFria {
 	// metodos
 	abstract public void mostrarForma();
 	
-	protected Anfibio(String tipoPiel, String tipoExtremidades, int numExtremidades, String tipoAlimentacion, String tipoMobilidad, String nombre, String tipoReproduccion, double tempCuerpoActual, double tempAmbiente, String estadoMetamorfosis) {
-		super(tipoPiel, tipoExtremidades, numExtremidades, tipoAlimentacion, tipoMobilidad, nombre, tipoReproduccion, tempCuerpoActual, tempAmbiente);
+	protected Anfibio(String tipoPiel, String tipoExtremidades, int numExtremidades,
+			String tipoAlimentacion, String tipoMobilidad, String nombre, String tipoReproduccion,
+			double tempCuerpoActual, double tempAmbiente, String estadoMetamorfosis) {
+		super(tipoPiel, tipoExtremidades, numExtremidades, tipoAlimentacion, tipoMobilidad,
+				nombre, tipoReproduccion, tempCuerpoActual, tempAmbiente);
 		this.estadoMetamorfosis = estadoMetamorfosis;
 	}
 	
