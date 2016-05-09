@@ -37,4 +37,15 @@ public abstract class SangreFria extends AnimalVertebrado {
 		else
 			System.out.println(nombre + " no ha cambiado su temperatura.");
 	}
+	
+	public void calcularTempActual(double temAmbiente) {
+		if (tempCuerpoActual < tempAmbiente || tempCuerpoActual > tempAmbiente)
+		{
+			tempCuerpoActual = tempAmbiente;
+			System.out.println(nombre + " se ha adaptado a su entorno natural.");
+		}
+		else
+			System.out.println(nombre + " no ha cambiado su temperatura.");
+	}
+		
 }
