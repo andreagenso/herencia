@@ -20,12 +20,13 @@ public abstract class Ave extends SangreTibia {
 	}
 	// metodos	
 	abstract public void mostrarForma();
+	
 	public String mostrarClasificacionCientifica(){
 		return (super.mostrarClasificacionCientifica() + "/AVE"); 
 	}
 	
-	public void mostrarAnimal() {
-		super.mostrarAnimal();
+	public void mostrarAnimalVertebrado() {
+		super.mostrarAnimalVertebrado();
 		System.out.println("\tENVERGADURA DE AVE: " + envergadura + " cm");
 		System.out.println("\tTIPO DE PICO DE AVE: " + tipoPico.toString());
 	}

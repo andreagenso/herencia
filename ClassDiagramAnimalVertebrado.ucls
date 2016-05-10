@@ -73,16 +73,7 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="9" language="java" name="code.clasificacion.Pez" project="Animales" 
-    file="/Animales/src/code/clasificacion/Pez.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="812" y="307"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
-      sort-features="false" accessors="true" visibility="true">      
-      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
-      <operations public="true" package="true" protected="true" private="true" static="true"/>    
-    </display>  
-  </class>  
-  <class id="10" language="java" name="code.clasificacion.Reptil" project="Animales" 
+  <class id="9" language="java" name="code.clasificacion.Reptil" project="Animales" 
     file="/Animales/src/code/clasificacion/Reptil.java" binary="false" corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="353" y="296"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
@@ -91,7 +82,7 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="11" language="java" name="code.clasificacion.Ave" project="Animales" 
+  <class id="10" language="java" name="code.clasificacion.Ave" project="Animales" 
     file="/Animales/src/code/clasificacion/Ave.java" binary="false" corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="1997" y="292"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
@@ -100,7 +91,7 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="12" language="java" name="code.sangre.SangreFria" project="Animales" 
+  <class id="11" language="java" name="code.sangre.SangreFria" project="Animales" 
     file="/Animales/src/code/sangre/SangreFria.java" binary="false" corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="796" y="76"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
@@ -109,7 +100,7 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="13" language="java" name="code.sangre.SangreTibia" project="Animales" 
+  <class id="12" language="java" name="code.sangre.SangreTibia" project="Animales" 
     file="/Animales/src/code/sangre/SangreTibia.java" binary="false" corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="2173" y="69"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
@@ -118,7 +109,7 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="14" language="java" name="code.top.AnimalVertebrado" project="Animales" 
+  <class id="13" language="java" name="code.top.AnimalVertebrado" project="Animales" 
     file="/Animales/src/code/top/AnimalVertebrado.java" binary="false" corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="1305" y="-179"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
@@ -127,7 +118,7 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <enumeration id="15" language="java" name="code.lib.EstadoMetamorfosis" project="Animales" 
+  <enumeration id="14" language="java" name="code.lib.EstadoMetamorfosis" project="Animales" 
     file="/Animales/src/code/lib/EstadoMetamorfosis.java" binary="false" corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="1327" y="106"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
@@ -136,7 +127,7 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </enumeration>  
-  <enumeration id="16" language="java" name="code.lib.TipoPico" project="Animales" 
+  <enumeration id="15" language="java" name="code.lib.TipoPico" project="Animales" 
     file="/Animales/src/code/lib/TipoPico.java" binary="false" corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="1646" y="351"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
@@ -145,7 +136,7 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </enumeration>  
-  <enumeration id="17" language="java" name="code.lib.TipoReproduccion" project="Animales" 
+  <enumeration id="16" language="java" name="code.lib.TipoReproduccion" project="Animales" 
     file="/Animales/src/code/lib/TipoReproduccion.java" binary="false" corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="881" y="-212"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
@@ -154,77 +145,98 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </enumeration>  
+  <class id="17" language="java" name="code.clasificacion.Pez" project="Animales" 
+    file="/Animales/src/code/clasificacion/Pez.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="815" y="301"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
   <generalization id="18">    
     <end type="SOURCE" refId="4"/>    
     <end type="TARGET" refId="8"/>  
   </generalization>  
   <association id="19">    
-    <end type="SOURCE" refId="11" navigable="false" variant="ASSOCIATION">      
-      <attribute id="20" name="tipoPico"/>      
-      <multiplicity id="21" minimum="0" maximum="1"/>    
+    <end type="SOURCE" refId="13" navigable="false" variant="ASSOCIATION">      
+      <attribute id="20" name="tipoReproduccion">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="21" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
     </end>    
     <end type="TARGET" refId="16" navigable="true" variant="ASSOCIATION"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
   <generalization id="22">    
-    <end type="SOURCE" refId="9"/>    
+    <end type="SOURCE" refId="8"/>    
     <end type="TARGET" refId="12"/>  
   </generalization>  
   <generalization id="23">    
-    <end type="SOURCE" refId="11"/>    
-    <end type="TARGET" refId="13"/>  
-  </generalization>  
-  <generalization id="24">    
-    <end type="SOURCE" refId="3"/>    
-    <end type="TARGET" refId="11"/>  
-  </generalization>  
-  <generalization id="25">    
-    <end type="SOURCE" refId="7"/>    
+    <end type="SOURCE" refId="10"/>    
     <end type="TARGET" refId="12"/>  
   </generalization>  
-  <association id="26">    
-    <end type="SOURCE" refId="14" navigable="false" variant="ASSOCIATION">      
-      <attribute id="27" name="tipoReproduccion"/>      
-      <multiplicity id="28" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="17" navigable="true" variant="ASSOCIATION"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="29">    
-    <end type="SOURCE" refId="7" navigable="false" variant="ASSOCIATION">      
-      <attribute id="30" name="estadoMetamorfosis"/>      
-      <multiplicity id="31" minimum="0" maximum="1"/>    
+  <association id="24">    
+    <end type="SOURCE" refId="10" navigable="false" variant="ASSOCIATION">      
+      <attribute id="25" name="tipoPico">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="26" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
     </end>    
     <end type="TARGET" refId="15" navigable="true" variant="ASSOCIATION"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <generalization id="32">    
-    <end type="SOURCE" refId="8"/>    
+  <generalization id="27">    
+    <end type="SOURCE" refId="5"/>    
+    <end type="TARGET" refId="17"/>  
+  </generalization>  
+  <generalization id="28">    
+    <end type="SOURCE" refId="11"/>    
     <end type="TARGET" refId="13"/>  
   </generalization>  
-  <generalization id="33">    
-    <end type="SOURCE" refId="1"/>    
-    <end type="TARGET" refId="10"/>  
-  </generalization>  
-  <generalization id="34">    
-    <end type="SOURCE" refId="12"/>    
-    <end type="TARGET" refId="14"/>  
-  </generalization>  
-  <generalization id="35">    
-    <end type="SOURCE" refId="5"/>    
-    <end type="TARGET" refId="9"/>  
-  </generalization>  
-  <generalization id="36">    
-    <end type="SOURCE" refId="13"/>    
-    <end type="TARGET" refId="14"/>  
-  </generalization>  
-  <generalization id="37">    
+  <generalization id="29">    
     <end type="SOURCE" refId="6"/>    
     <end type="TARGET" refId="7"/>  
   </generalization>  
+  <generalization id="30">    
+    <end type="SOURCE" refId="17"/>    
+    <end type="TARGET" refId="11"/>  
+  </generalization>  
+  <generalization id="31">    
+    <end type="SOURCE" refId="12"/>    
+    <end type="TARGET" refId="13"/>  
+  </generalization>  
+  <association id="32">    
+    <end type="SOURCE" refId="7" navigable="false" variant="ASSOCIATION">      
+      <attribute id="33" name="estadoMetamorfosis">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="34" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="14" navigable="true" variant="ASSOCIATION"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="35">    
+    <end type="SOURCE" refId="1"/>    
+    <end type="TARGET" refId="9"/>  
+  </generalization>  
+  <generalization id="36">    
+    <end type="SOURCE" refId="3"/>    
+    <end type="TARGET" refId="10"/>  
+  </generalization>  
+  <generalization id="37">    
+    <end type="SOURCE" refId="9"/>    
+    <end type="TARGET" refId="11"/>  
+  </generalization>  
   <generalization id="38">    
-    <end type="SOURCE" refId="10"/>    
-    <end type="TARGET" refId="12"/>  
+    <end type="SOURCE" refId="7"/>    
+    <end type="TARGET" refId="11"/>  
   </generalization>  
   <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
     sort-features="false" accessors="true" visibility="true">    

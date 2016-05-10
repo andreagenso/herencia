@@ -1,5 +1,4 @@
 package code.top;
-
 import code.lib.TipoReproduccion;
 
 public abstract class AnimalVertebrado {

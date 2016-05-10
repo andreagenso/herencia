@@ -22,10 +22,6 @@ public class Sapo extends Anfibio {
 		System.out.println("    :     / \\/ |   | \\/ \\   `.");
 		System.out.println("~    `___ |_\\__|___|__/_|     `.     ~");
 		System.out.println("         /|\\  /|\\ /|\\  /|\\      ;");
-		System.out.println("  .____.o o oo o o o oo o o      ;");
-		System.out.println("~  :                            ;");
-		System.out.println("  :__                       __.");
-		System.out.println("~       :_____         _____...");				
+		System.out.println("  .____.o o oo o o o oo o o      ;");			
 	}
-
 }

@@ -10,8 +10,8 @@ public class Salmon extends Pez {
 			String nombre, TipoReproduccion tipoReproduccion, double tempCuerpoActual,
 			double tempAmbiente, int tipoAletasPares,int tipoAletasMediaLinea) {
 		super(tipoPiel,tipoExtremidades,numExtremidades, tipoAlimentacion,tipoMobilidad,
-				nombre,tipoReproduccion,
-				tempCuerpoActual, tempAmbiente, tipoAletasPares, tipoAletasMediaLinea);
+			nombre,tipoReproduccion, tempCuerpoActual, tempAmbiente, tipoAletasPares, 
+			tipoAletasMediaLinea);
 	}
 	
 	@Override
@@ -26,5 +26,4 @@ public class Salmon extends Pez {
 	    System.out.println("       ',))))))))\\/)))))' \\{");
 	    System.out.println("         '*O))))))))O*'");			
 	}
-
 }

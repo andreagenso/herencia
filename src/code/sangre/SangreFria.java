@@ -1,5 +1,4 @@
 package code.sangre;
-
 import code.top.AnimalVertebrado;
 import code.lib.TipoReproduccion;
 

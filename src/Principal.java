@@ -8,9 +8,9 @@ public class Principal {
 
 	public static void main(String[] args) {
 		
-		AnimalVertebrado frog = new Sapo("Permiable por agua, lycra","Piernas",4,
-				"Carnivoro","Caminar, nadar, saltar","Sapo",
-				TipoReproduccion.OVULIPARO,37.05,44.88, EstadoMetamorfosis.ADULTO);	
+		AnimalVertebrado frog = new Sapo("Permiable por agua, lycra","Piernas",4, "Carnivoro",
+				"Caminar, nadar, saltar","Sapo", TipoReproduccion.OVULIPARO,37.05,44.88,
+				EstadoMetamorfosis.ADULTO);	
 		System.out.println(frog.mostrarClasificacionCientifica());
 		System.out.println("\n");
 		frog.mostrarAnimalVertebrado();

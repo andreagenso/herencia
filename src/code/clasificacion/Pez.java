@@ -1,13 +1,12 @@
 package code.clasificacion;
-
 import code.sangre.*;
 import code.lib.TipoReproduccion;
 
 public abstract class Pez extends SangreFria {
 
 	// atributos
-	int tipoAletasPares;
-	int tipoAletasMediaLinea; // aletas de media linea
+	protected int tipoAletasPares;
+	protected int tipoAletasMediaLinea; // aletas de media linea
 	
 	// metodos
 	protected Pez(String tipoPiel, String tipoExtremidades,

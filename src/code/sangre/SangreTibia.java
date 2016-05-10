@@ -1,5 +1,4 @@
 package code.sangre;
-
 import code.top.AnimalVertebrado;
 import code.lib.TipoReproduccion;
 
@@ -19,7 +18,7 @@ public abstract class SangreTibia extends AnimalVertebrado {
 	// metodos
 	abstract public void mostrarForma();	
 	
-	public void mostrarAnimal() {
+	public void mostrarAnimalVertebrado() {
 		super.mostrarAnimalVertebrado();
 		System.out.println("\tELIMINA EXCESO DE CALOR CORPORAL POR: " + eliminExcesoCalor);
 	}
