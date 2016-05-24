@@ -17,6 +17,7 @@ public abstract class Mamifero extends SangreTibia {
 				tipoMobilidad, nombre, tipoReproduccion, eliminExcesoCalor);
 		this.produceLeche= produceLeche;
 		this.nroPezones = numPezones;
+		clasificacion = "MAMIFERO";
 	}
 	
 	// metodos
@@ -29,9 +30,9 @@ public abstract class Mamifero extends SangreTibia {
 	public void mostrarAnimalVertebrado() {
 		super.mostrarAnimalVertebrado();
 		if (produceLeche)
-			System.out.println(nombre + " PRODUCE LECHE");
+			System.out.println("\t" + nombre + ": PRODUCE LECHE");
 		else
-			System.out.println(nombre + " NO PRODUCE LECHE");
-		System.out.println(nombre + " NUMERO DE PEZONES " + nroPezones);
+			System.out.println("\t" + nombre + ": NO PRODUCE LECHE");
+		System.out.println("\t" + nombre + ": NUMERO DE PEZONES = " + nroPezones);
 	}
 }

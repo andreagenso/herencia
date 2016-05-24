@@ -5,8 +5,8 @@ import code.lib.TipoReproduccion;
 public abstract class Pez extends SangreFria {
 
 	// atributos
-	protected int tipoAletasPares;
-	protected int tipoAletasMediaLinea; // aletas de media linea
+	int tipoAletasPares;
+	int tipoAletasMediaLinea; // aletas de media linea
 	
 	// metodos
 	protected Pez(String tipoPiel, String tipoExtremidades,
@@ -17,6 +17,7 @@ public abstract class Pez extends SangreFria {
 				tipoMobilidad, nombre, tipoReproduccion, tempCuerpoActual, tempAmbiente);
 		this.tipoAletasMediaLinea = tipoAletasMediaLinea;
 		this.tipoAletasPares = tipoAletasPares;
+		clasificacion = "PEZ";
 	}
 
 	public abstract void mostrarForma(); 

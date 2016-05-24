@@ -17,6 +17,7 @@ public abstract class Reptil extends SangreFria {
 		super(tipoPiel, tipoExtremidades, numExtremidades, tipoAlimentacion, tipoMobilidad,
 				nombre, tipoReproduccion, tempCuerpoActual, tempAmbiente);
 		this.ordenReptil = ordenReptil;
+		clasificacion = "REPTIL";
 	}
 
 	public String mostrarClasificacionCientifica(){

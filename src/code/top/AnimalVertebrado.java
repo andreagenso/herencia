@@ -10,6 +10,7 @@ public abstract class AnimalVertebrado {
 	protected TipoReproduccion tipoReproduccion;
 	protected String tipoMobilidad; // caminar, nadar, volar, etc	
 	protected String nombre;	
+	protected String clasificacion;
 	
 	// constructor	
 	protected AnimalVertebrado(String tipoPiel, String tipoExtremidades,int numExtremidades, 
@@ -37,5 +38,17 @@ public abstract class AnimalVertebrado {
 		System.out.println("\tTIPO DE REPRODUCCION: " + tipoReproduccion);
 		System.out.println("\tTIPO DE MOBILIDAD: " + tipoMobilidad);
 		System.out.println("\tTIPO DE EXTREMIDADES: " + tipoExtremidades + " Nro: " + numExtremidades);
+	}
+
+	public String getClasificacion() {
+		return clasificacion;
+	}
+
+	public void setClasificacion(String clasificacion) {
+		this.clasificacion = clasificacion;
+	}
+	
+	public String getNombre() {
+		return nombre;
 	}
 }

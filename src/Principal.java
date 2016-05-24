@@ -1,3 +1,4 @@
+/*
 import code.animal.*;
 import code.top.AnimalVertebrado;
 import code.lib.EstadoMetamorfosis;
@@ -52,8 +53,8 @@ public class Principal {
 		System.out.println("\n");
 		System.out.println("------------------------------------------------------\n");
 		
-		AnimalVertebrado perro = new Perro("Pelo","Patas",4,"Omnivoro",
-				"Caminar","Perro labrador",TipoReproduccion.VIVIPARO,"No",true,10);
+		AnimalVertebrado perro = new Perro("Pelo","Patas",4,"Omnivoro","Caminar","Perro labrador",
+			TipoReproduccion.VIVIPARO,"Agitarse",true,10);
 		System.out.println(perro.mostrarClasificacionCientifica());
 		System.out.println("\n");
 		perro.mostrarAnimalVertebrado();
@@ -63,3 +64,49 @@ public class Principal {
 		System.out.println("------------------------------------------------------\n");
 	}
 }
+*/
+
+import code.zoo.Zoologico;
+import code.animal.*;
+import code.top.AnimalVertebrado;
+import code.lib.EstadoMetamorfosis;
+import code.lib.TipoReproduccion;
+
+public class Principal {
+
+	public static void main(String[] args) {
+		AnimalVertebrado frog = new Sapo("Permiable por agua, lycra","Piernas",4, "Carnivoro",
+				"Caminar, nadar, saltar","Sapo", TipoReproduccion.OVULIPARO,37.05,44.88,
+				EstadoMetamorfosis.ADULTO);	
+		AnimalVertebrado chameleon = new Camaleon("Escamas","Piernas",4,
+				"Carnivoro","Arrastrar","Camaleon",TipoReproduccion.OVIPARO,38.71,39.12,"Squamata");
+		AnimalVertebrado salmon = new Salmon("Escamas","Aletas",5,"Omnivoro",
+				"Nadar","Salmon",TipoReproduccion.OVULIPARO,44.45,44.45,2,3);
+		AnimalVertebrado gorrion = new GorrionComun("Plumas","Alas",2,"Herbivoro",
+				"Volar","Gorrion Comun",TipoReproduccion.OVIPARO,"Evaporation",21.082);
+		AnimalVertebrado perro = new Perro("Pelo","Patas",4,"Omnivoro","Caminar","Perro labrador",
+				TipoReproduccion.VIVIPARO,"Agitarse",true,10);
+		
+		Zoologico.getInstancia().agregarAnimal(frog);
+		Zoologico.getInstancia().agregarAnimal(chameleon);
+		Zoologico.getInstancia().agregarAnimal(gorrion);
+		Zoologico.getInstancia().agregarAnimal(salmon);
+		Zoologico.getInstancia().agregarAnimal(perro);
+		//Zoologico.getInstancia().mostrarTodosAnimales();
+		//Zoologico.getInstancia().mostrarAnimalesporClasificacion("AVE");
+		//Zoologico.getInstancia().buscarAnimal("Perro labrador");
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
