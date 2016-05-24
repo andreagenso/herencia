@@ -17,7 +17,7 @@ public abstract class Ave extends SangreTibia {
 				tipoMobilidad, nombre, tipoReproduccion, eliminExcesoCalor);
 		this.envergadura = envergadura;
 		this.tipoPico = tipoPico;
-		clasificacion = "AVE";
+		this.clasificacion = "AVE";
 	}
 	// metodos	
 	abstract public void mostrarForma();

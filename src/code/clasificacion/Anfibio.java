@@ -16,7 +16,7 @@ public abstract class Anfibio extends SangreFria {
 		super(tipoPiel, tipoExtremidades, numExtremidades, tipoAlimentacion, tipoMobilidad,
 				nombre, tipoReproduccion, tempCuerpoActual, tempAmbiente);
 		this.estadoMetamorfosis = estadoMetamorfosis;
-		clasificacion = "ANFIBIO";
+		this.clasificacion = "ANFIBIO";
 	}
 	
 	// metodos

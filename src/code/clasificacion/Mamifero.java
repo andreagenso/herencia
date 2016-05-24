@@ -17,7 +17,7 @@ public abstract class Mamifero extends SangreTibia {
 				tipoMobilidad, nombre, tipoReproduccion, eliminExcesoCalor);
 		this.produceLeche= produceLeche;
 		this.nroPezones = numPezones;
-		clasificacion = "MAMIFERO";
+		this.clasificacion = "MAMIFERO";
 	}
 	
 	// metodos

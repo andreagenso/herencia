@@ -87,26 +87,54 @@ public class Principal {
 		AnimalVertebrado perro = new Perro("Pelo","Patas",4,"Omnivoro","Caminar","Perro labrador",
 				TipoReproduccion.VIVIPARO,"Agitarse",true,10);
 		
-		Zoologico.getInstancia().agregarAnimal(frog);
-		Zoologico.getInstancia().agregarAnimal(chameleon);
-		Zoologico.getInstancia().agregarAnimal(gorrion);
-		Zoologico.getInstancia().agregarAnimal(salmon);
-		Zoologico.getInstancia().agregarAnimal(perro);
-		//Zoologico.getInstancia().mostrarTodosAnimales();
-		//Zoologico.getInstancia().mostrarAnimalesporClasificacion("AVE");
-		//Zoologico.getInstancia().buscarAnimal("Perro labrador");
+		
+		Zoologico zoologico = Zoologico.getInstancia(); 
+		
+		zoologico.agregarAnimal(frog);
+		zoologico.agregarAnimal(chameleon);
+		zoologico.agregarAnimal(gorrion);
+		zoologico.agregarAnimal(salmon);
+		zoologico.agregarAnimal(perro);
+		
+		// interaccion con el teclado
+		java.util.Scanner in = new java.util.Scanner(System.in);
+		int opcion;
+		String buscar;
+		boolean continuarVisita = true;
+		
+		System.out.println("BIENVENIDO AL ZOOLOGICO " + zoologico.getNombre());
+		while(continuarVisita){									
+			System.out.println("POR FAVOR ELIJA UNA DE LAS OPCIONES: ");
+			System.out.println("\t 1 - Mostrar todos los animales");
+			System.out.println("\t 2 - Buscar animales por clasificacion");
+			System.out.println("\t 3 - Buscar animal por nombre");
+			System.out.println("\t 4 - Salir");
+			
+			opcion = in.nextInt();
+			
+			switch (opcion) {
+			case 1 :
+				zoologico.mostrarTodosAnimales();
+				break;
+			case 2 :
+				System.out.println("POR FAVOR ESCRIBA QUE CLASIFICACION DESEA BUSCAR:");
+				buscar = in.next();
+				zoologico.mostrarAnimalesporClasificacion(buscar);
+				break;
+			case 3 :
+				System.out.println("POR FAVOR ESCRIBA EL NOMBRE DEL ANIMAL QUE DESEA BUSCAR:");
+				buscar = in.next();
+				zoologico.buscarAnimalPorNombre(buscar);
+				break;
+			case 4 :
+				continuarVisita = false;
+				System.out.println("ADIOS VUELVA PRONTO! :-) ");
+				break;
+			default :	
+				System.out.println("OPCION DESCONOCIDA, POR FAVOR ELIJA UNA OPCION NUEVAMENTE");
+				break;
+			}
+		}		
+				
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-

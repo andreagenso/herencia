@@ -10,7 +10,8 @@ public class Perro extends Mamifero {
 			String nombre, TipoReproduccion tipoReproduccion, String eliminExcesoCalor, 
 			Boolean produceLeche,int nroPezones) {
 		super(tipoPiel, tipoExtremidades, numExtremidades, tipoAlimentacion,
-				tipoMobilidad, nombre, tipoReproduccion, eliminExcesoCalor,produceLeche, nroPezones);		
+				tipoMobilidad, nombre, tipoReproduccion, eliminExcesoCalor,produceLeche, nroPezones);
+		this.clasificacion = "PERRO";
 	}
 	
 	@Override

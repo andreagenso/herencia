@@ -12,6 +12,7 @@ public class Salmon extends Pez {
 		super(tipoPiel,tipoExtremidades,numExtremidades, tipoAlimentacion,tipoMobilidad,
 			nombre,tipoReproduccion, tempCuerpoActual, tempAmbiente, tipoAletasPares, 
 			tipoAletasMediaLinea);
+		this.clasificacion = "SALMON";
 	}
 	
 	@Override

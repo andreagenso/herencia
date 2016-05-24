@@ -10,6 +10,7 @@ public class GorrionComun extends Ave {
 			TipoReproduccion tipoReproduccion, String eliminExcesoCalor, double envergadura) {
 		super(tipoPiel, tipoExtremidades, numExtremidades, tipoAlimentacion, tipoMobilidad,
 				nombre, tipoReproduccion, eliminExcesoCalor, envergadura, TipoPico.GENERALISTA);
+		this.clasificacion = "GORRION";
 	}
 	
 	@Override

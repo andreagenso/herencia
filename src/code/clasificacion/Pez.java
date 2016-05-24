@@ -17,7 +17,7 @@ public abstract class Pez extends SangreFria {
 				tipoMobilidad, nombre, tipoReproduccion, tempCuerpoActual, tempAmbiente);
 		this.tipoAletasMediaLinea = tipoAletasMediaLinea;
 		this.tipoAletasPares = tipoAletasPares;
-		clasificacion = "PEZ";
+		this.clasificacion = "PEZ";
 	}
 
 	public abstract void mostrarForma(); 
