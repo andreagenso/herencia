@@ -9,7 +9,6 @@ public class Zoologico {
 	protected String nombreZoologico;
 	ArrayList<AnimalVertebrado> animalList = new ArrayList<AnimalVertebrado>(); 
 
-	
 	// crear una unica instancia
 	private static Zoologico INSTANCE = new Zoologico();
 	
@@ -25,14 +24,13 @@ public class Zoologico {
 		return INSTANCE;
 	}
 	
-	
 	// metodos
 	public String getNombre() {
 		return nombreZoologico;
 	}
 	
 	public void agregarAnimal(AnimalVertebrado animalVertebrado){		
-		System.out.println("__________________________________");
+		System.out.println("\n__________________________________");
 		System.out.println("AGREGANDO ANIMAL:" + animalVertebrado.getNombre());
 		System.out.println("ASIGNANDO JAULA NRO:" + animalList.size());
 		if (animalList.add( animalVertebrado)){
@@ -120,7 +118,6 @@ public class Zoologico {
 				mostrarAnimalVertebrado(animalVertebrado);
 			}
 		}
-		System.out.println("__________________________________");
-		
+		System.out.println("__________________________________");	
 	}
 }

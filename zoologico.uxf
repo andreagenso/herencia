@@ -1,0 +1,489 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.2.0">
+  <zoom_level>6</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>366</x>
+      <y>126</y>
+      <w>126</w>
+      <h>18</h>
+    </coordinates>
+    <panel_attributes>/code.top::AnimalVertebrado/
+--
+#tipoPiel: String
+#tipoExtremidades: String
+#numExtremidades: int
+#tipoAlimentacion: String
+#tipoReproduccion: TipoReproduccion
+#tipoMobilidad: String
+#nombre: String
+#clasificacion: String
+--
+#AnimalVertebrado(String tipoPiel, String tipoExtremidades, int numExtremidades, String tipoAlimentacion, String tipoMobilidad, String nombre, TipoReproduccion tipoReproduccion): ctor
++mostrarForma(): void
++mostrarClasificacionCientifica(): String
++mostrarAnimalVertebrado(): void
++getClasificacion(): String
++setClasificacion(String clasificacion): void
++getNombre(): String
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>846</x>
+      <y>90</y>
+      <w>324</w>
+      <h>168</h>
+    </coordinates>
+    <panel_attributes>code.zoo::Zoologico
+--
+#nombreZoologico: String
+~animalList = new ArrayList&lt;AnimalVertebrado&gt;(): ArrayList&lt;AnimalVertebrado&gt;
+-INSTANCE = new Zoologico(): Zoologico
+--
+-Zoologico(): ctor
++getInstancia(): Zoologico
++getNombre(): String
++agregarAnimal(AnimalVertebrado animalVertebrado): void
++mostrarAnimalPorJaula(int jaula): void
+-mostrarAnimalVertebrado(AnimalVertebrado animalVertebrado): void
++mostrarTodosAnimales(): void
++mostrarAnimalesporClasificacion(String clasificacion): void
+-buscarAnimalesPorClasificacion(String clasificacion): ArrayList&lt;AnimalVertebrado&gt;
++buscarAnimalPorNombre(String nombre): void
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>528</x>
+      <y>318</y>
+      <w>138</w>
+      <h>18</h>
+    </coordinates>
+    <panel_attributes>/code.clasificacion::Mamifero/
+--
+#produceLeche: Boolean
+#nroPezones: int
+--
++Mamifero(String tipoPiel, String tipoExtremidades, int numExtremidades, String tipoAlimentacion, String tipoMobilidad, String nombre, TipoReproduccion tipoReproduccion, String eliminExcesoCalor, Boolean produceLeche, int numPezones): ctor
++mostrarForma(): void
++mostrarClasificacionCientifica(): String
++mostrarAnimalVertebrado(): void
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>378</x>
+      <y>318</y>
+      <w>132</w>
+      <h>18</h>
+    </coordinates>
+    <panel_attributes>/code.clasificacion::Pez/
+--
+~tipoAletasPares: int
+~tipoAletasMediaLinea: int
+--
+#Pez(String tipoPiel, String tipoExtremidades, int numExtremidades, String tipoAlimentacion, String tipoMobilidad, String nombre, TipoReproduccion tipoReproduccion, double tempCuerpoActual, double tempAmbiente, int tipoAletasPares, int tipoAletasMediaLinea): ctor
++mostrarForma(): void
++mostrarClasificacionCientifica(): String
++mostrarAnimalVertebrado(): void
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>246</x>
+      <y>318</y>
+      <w>126</w>
+      <h>18</h>
+    </coordinates>
+    <panel_attributes>/code.clasificacion::Anfibio/
+--
+#estadoMetamorfosis: EstadoMetamorfosis
+--
+#Anfibio(String tipoPiel, String tipoExtremidades, int numExtremidades, String tipoAlimentacion, String tipoMobilidad, String nombre, TipoReproduccion tipoReproduccion, double tempCuerpoActual, double tempAmbiente, EstadoMetamorfosis estadoMetamorfosis): ctor
++mostrarForma(): void
++mostrarClasificacionCientifica(): String
++mostrarAnimalVertebrado(): void
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>78</x>
+      <y>318</y>
+      <w>144</w>
+      <h>18</h>
+    </coordinates>
+    <panel_attributes>/code.clasificacion::Reptil/
+--
+#ordenReptil: String
+--
+#Reptil(String tipoPiel, String tipoExtremidades, int numExtremidades, String tipoAlimentacion, String tipoMobilidad, String nombre, TipoReproduccion tipoReproduccion, double tempCuerpoActual, double tempAmbiente, String ordenReptil): ctor
++mostrarForma(): void
++mostrarClasificacionCientifica(): String
++mostrarAnimalVertebrado(): void
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>558</x>
+      <y>234</y>
+      <w>150</w>
+      <h>18</h>
+    </coordinates>
+    <panel_attributes>/code.sangre::SangreTibia/
+--
+#eliminExcesoCalor: String
+--
+#SangreTibia(String tipoPiel, String tipoExtremidades, int numExtremidades, String tipoAlimentacion, String tipoMobilidad, String nombre, TipoReproduccion tipoReproduccion, String eliminExcesoCalor): ctor
++mostrarForma(): void
++mostrarAnimalVertebrado(): void
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>0</x>
+      <y>378</y>
+      <w>138</w>
+      <h>18</h>
+    </coordinates>
+    <panel_attributes>code.animal::Camaleon
+--
+--
++Camaleon(String tipoPiel, String tipoExtremidades, int numExtremidades, String tipoAlimentacion, String tipoMobilidad, String nombre, TipoReproduccion tipoReproduccion, double tempCuerpoActual, double tempAmbiente, String ordenReptil): ctor
++mostrarForma(): void
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>708</x>
+      <y>372</y>
+      <w>192</w>
+      <h>18</h>
+    </coordinates>
+    <panel_attributes>code.animal::GorrionComun
+--
+--
++GorrionComun(String tipoPiel, String tipoExtremidades, int numExtremidades, String tipoAlimentacion, String tipoMobilidad, String nombre, TipoReproduccion tipoReproduccion, String eliminExcesoCalor, double envergadura): ctor
++mostrarForma(): void
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>564</x>
+      <y>372</y>
+      <w>108</w>
+      <h>18</h>
+    </coordinates>
+    <panel_attributes>code.animal::Perro
+--
+--
++Perro(String tipoPiel, String tipoExtremidades, int numExtremidades, String tipoAlimentacion, String tipoMobilidad, String nombre, TipoReproduccion tipoReproduccion, String eliminExcesoCalor, Boolean produceLeche, int nroPezones): ctor
++mostrarForma(): void
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>432</x>
+      <y>372</y>
+      <w>108</w>
+      <h>18</h>
+    </coordinates>
+    <panel_attributes>code.animal::Salmon
+--
+--
++Salmon(String tipoPiel, String tipoExtremidades, int numExtremidades, String tipoAlimentacion, String tipoMobilidad, String nombre, TipoReproduccion tipoReproduccion, double tempCuerpoActual, double tempAmbiente, int tipoAletasPares, int tipoAletasMediaLinea): ctor
++mostrarForma(): void
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>306</x>
+      <y>378</y>
+      <w>114</w>
+      <h>18</h>
+    </coordinates>
+    <panel_attributes>code.animal::Sapo
+--
+--
++Sapo(String tipoPiel, String tipoExtremidades, int numExtremidades, String tipoAlimentacion, String tipoMobilidad, String nombre, TipoReproduccion tipoReproduccion, double tempCuerpoActual, double tempAmbiente, EstadoMetamorfosis estadoMetamorfosis): ctor
++mostrarForma(): void
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>150</x>
+      <y>378</y>
+      <w>144</w>
+      <h>54</h>
+    </coordinates>
+    <panel_attributes>code.animal::Serpiente
+--
+--
++Serpiente(String tipoPiel, String tipoExtremidades, int numExtremidades, String tipoAlimentacion, String tipoMobilidad, String nombre, TipoReproduccion tipoReproduccion, double tempCuerpoActual, double tempAmbiente, String ordenReptil): ctor
++mostrarForma(): void
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>678</x>
+      <y>72</y>
+      <w>102</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>::Principal
+--
+--
++main(String[] args): void
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>234</x>
+      <y>228</y>
+      <w>114</w>
+      <h>18</h>
+    </coordinates>
+    <panel_attributes>/code.sangre::SangreFria/
+--
+#tempCuerpoActual: double
+#tempAmbiente: double
+--
+#SangreFria(String tipoPiel, String tipoExtremidades, int numExtremidades, String tipoAlimentacion, String tipoMobilidad, String nombre, TipoReproduccion tipoReproduccion, double tempCuerpoActual, double tempAmbiente): ctor
++mostrarForma(): void
++mostrarAnimalVertebrado(): void
++calcularTempActual(): void
++calcularTempActual(double temAmbiente): void
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>300</x>
+      <y>138</y>
+      <w>138</w>
+      <h>102</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>210.0;10.0;10.0;150.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>426</x>
+      <y>138</y>
+      <w>228</w>
+      <h>108</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;360.0;160.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>666</x>
+      <y>240</y>
+      <w>96</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;140.0;130.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>606</x>
+      <y>240</y>
+      <w>24</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;20.0;130.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>708</x>
+      <y>318</y>
+      <w>120</w>
+      <h>18</h>
+    </coordinates>
+    <panel_attributes>/code.clasificacion::Ave/
+--
+#envergadura: double
+#tipoPico: TipoPico
+--
++Ave(String tipoPiel, String tipoExtremidades, int numExtremidades, String tipoAlimentacion, String tipoMobilidad, String nombre, TipoReproduccion tipoReproduccion, String eliminExcesoCalor, double envergadura, TipoPico tipoPico): ctor
++mostrarForma(): void
++mostrarClasificacionCientifica(): String
++mostrarAnimalVertebrado(): void
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>150</x>
+      <y>240</y>
+      <w>144</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>220.0;10.0;10.0;130.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>288</x>
+      <y>240</y>
+      <w>24</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;20.0;130.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>324</x>
+      <y>240</y>
+      <w>144</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;220.0;130.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>36</x>
+      <y>330</y>
+      <w>108</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>160.0;10.0;10.0;80.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>174</x>
+      <y>330</y>
+      <w>48</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;60.0;80.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>324</x>
+      <y>330</y>
+      <w>30</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;30.0;80.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>456</x>
+      <y>324</y>
+      <w>36</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;40.0;80.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>600</x>
+      <y>330</y>
+      <w>18</w>
+      <h>54</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;70.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>774</x>
+      <y>330</y>
+      <w>24</w>
+      <h>54</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;20.0;70.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>486</x>
+      <y>120</y>
+      <w>372</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.</panel_attributes>
+    <additional_attributes>600.0;10.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>774</x>
+      <y>78</y>
+      <w>84</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;.</panel_attributes>
+    <additional_attributes>10.0;10.0;120.0;30.0</additional_attributes>
+  </element>
+</diagram>

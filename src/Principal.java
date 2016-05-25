@@ -65,12 +65,10 @@ public class Principal {
 	}
 }
 */
-
+import code.lib.*;
 import code.zoo.Zoologico;
 import code.animal.*;
 import code.top.AnimalVertebrado;
-import code.lib.EstadoMetamorfosis;
-import code.lib.TipoReproduccion;
 
 public class Principal {
 
@@ -86,7 +84,8 @@ public class Principal {
 				"Volar","Gorrion Comun",TipoReproduccion.OVIPARO,"Evaporation",21.082);
 		AnimalVertebrado perro = new Perro("Pelo","Patas",4,"Omnivoro","Caminar","Perro labrador",
 				TipoReproduccion.VIVIPARO,"Agitarse",true,10);
-		
+		AnimalVertebrado serpiente = new Serpiente("Escamas","Cola",1,"Carnivoro","Arrastrar",
+				"Serpiente",TipoReproduccion.OVIPARO,22.22,22.22,"Squamata");
 		
 		Zoologico zoologico = Zoologico.getInstancia(); 
 		
@@ -95,8 +94,10 @@ public class Principal {
 		zoologico.agregarAnimal(gorrion);
 		zoologico.agregarAnimal(salmon);
 		zoologico.agregarAnimal(perro);
+		zoologico.agregarAnimal(serpiente);
 		
 		// interaccion con el teclado
+		@SuppressWarnings("resource")
 		java.util.Scanner in = new java.util.Scanner(System.in);
 		int opcion;
 		String buscar;
@@ -105,10 +106,10 @@ public class Principal {
 		System.out.println("BIENVENIDO AL ZOOLOGICO " + zoologico.getNombre());
 		while(continuarVisita){									
 			System.out.println("POR FAVOR ELIJA UNA DE LAS OPCIONES: ");
-			System.out.println("\t 1 - Mostrar todos los animales");
-			System.out.println("\t 2 - Buscar animales por clasificacion");
-			System.out.println("\t 3 - Buscar animal por nombre");
-			System.out.println("\t 4 - Salir");
+			System.out.println("\t 1) Mostrar todos los animales");
+			System.out.println("\t 2) Buscar animales por clasificacion");
+			System.out.println("\t 3) Buscar animal por nombre");
+			System.out.println("\t 4) Salir");
 			
 			opcion = in.nextInt();
 			
@@ -117,24 +118,23 @@ public class Principal {
 				zoologico.mostrarTodosAnimales();
 				break;
 			case 2 :
-				System.out.println("POR FAVOR ESCRIBA QUE CLASIFICACION DESEA BUSCAR:");
+				System.out.println("\tPOR FAVOR ESCRIBA QUE CLASIFICACION DESEA BUSCAR: ");
 				buscar = in.next();
 				zoologico.mostrarAnimalesporClasificacion(buscar);
 				break;
 			case 3 :
-				System.out.println("POR FAVOR ESCRIBA EL NOMBRE DEL ANIMAL QUE DESEA BUSCAR:");
+				System.out.println("\tPOR FAVOR ESCRIBA EL NOMBRE DEL ANIMAL QUE DESEA BUSCAR: ");
 				buscar = in.next();
 				zoologico.buscarAnimalPorNombre(buscar);
 				break;
 			case 4 :
 				continuarVisita = false;
-				System.out.println("ADIOS VUELVA PRONTO! :-) ");
+				System.out.println("\tADIOS VUELVA PRONTO! :-) ");
 				break;
 			default :	
-				System.out.println("OPCION DESCONOCIDA, POR FAVOR ELIJA UNA OPCION NUEVAMENTE");
+				System.out.println("\tOPCION DESCONOCIDA, POR FAVOR ELIJA UNA OPCION NUEVAMENTE!");
 				break;
 			}
 		}		
-				
 	}
 }

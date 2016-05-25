@@ -15,12 +15,22 @@ public class Camaleon extends Reptil {
 	}
 	
 	public void mostrarForma(){
-		System.out.println("â”ˆâ•±â–‰â–”â–‰â–”â–‰â–”â–‰â•²â–•â–”â•²â”Šâ”Šâ”Šâ”Š");
-		System.out.println("â•±â–•â–‹â–•â–‹â–•â–‹â–•â–‹â”ˆâ–”â”ˆâ•°â•²â”Šâ”Šâ”Š");
-		System.out.println("â–�â–•â–Žâ–•â–Žâ–•â–Žâ–•â–Žâ”ˆâ–•â–”â•²â•°â•²â”Šâ”Š");
-		System.out.println("â–�â•±â–”â–”â•²â–‚â”Šâ”Šâ–‚â–‚â–�â•²â–‡â–�â–•â”Šâ”Š");
-		System.out.println("â–�â–�â•±â•²â–•â”Šâ•²â•°â•²â”ˆâ•²â•°â”�â”�â”�Ì¸â”�â•®");
-		System.out.println("â•²â•²â–�â•±â–•â”Šâ”Šâ•²â•°â–”â–�â–”â–”â–”â”Šâ•°â•¯");
-		System.out.println("â”Šâ•²â–‚â–‚â•±â”Šâ”Šâ”Šâ–”â–”â”Šâ”Šâ”Šâ”Šâ”Šâ”Šâ”Š");													
+		System.out.println("        _       _._");
+		System.out.println(" _,,-''' ''-,_ }'._''.,_.=._");
+		System.out.println(",-'      _ _    '        (  @)'-,");
+		System.out.println(",'  _..==;;::_::'-     __..----'''}");
+		System.out.println(":  .'::_;==''       ,'',: : : '' '}");
+		System.out.println("}  '::-'            /   },: : : :_,'");
+		System.out.println(":  :'     _..,,_    '., '._-,,,--\'");
+		System.out.println("{  ;   .-'       :      '-, ';,__\'");
+		System.out.println("{   '  :    _,,,   :__,,--::',,}___}^}_.-");
+		System.out.println("}        _,'__''',  ;_.-''_.-'");
+		System.out.println(":      ,':-''  ';, ;  ;_..-'");
+		System.out.println("_.-' }    ,',' ,''',  : ^^");
+		System.out.println("_.-''{    { ; ; 1,', '  :");
+		System.out.println("}   } :  ;_,' ;  }");
+		System.out.println("{   ',',___,'   '");
+		System.out.println("{ ',           ,'");
+		System.out.println("'-,,__,,-'");	
 	}
 }
