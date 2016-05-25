@@ -73,28 +73,40 @@ import code.top.AnimalVertebrado;
 public class Principal {
 
 	public static void main(String[] args) {
-		AnimalVertebrado frog = new Sapo("Permiable por agua, lycra","Piernas",4, "Carnivoro",
+		
+		AnimalVertebrado animal;
+		Zoologico zoologico = Zoologico.getInstancia();
+		
+		animal = new Sapo("Permiable por agua, lycra","Piernas",4, "Carnivoro",
 				"Caminar, nadar, saltar","Sapo", TipoReproduccion.OVULIPARO,37.05,44.88,
 				EstadoMetamorfosis.ADULTO);	
-		AnimalVertebrado chameleon = new Camaleon("Escamas","Piernas",4,
+		zoologico.agregarAnimal(animal);
+		//---------------
+		
+		animal = new Camaleon("Escamas","Piernas",4,
 				"Carnivoro","Arrastrar","Camaleon",TipoReproduccion.OVIPARO,38.71,39.12,"Squamata");
-		AnimalVertebrado salmon = new Salmon("Escamas","Aletas",5,"Omnivoro",
+		zoologico.agregarAnimal(animal);
+		//---------------
+		
+		animal = new Salmon("Escamas","Aletas",5,"Omnivoro",
 				"Nadar","Salmon",TipoReproduccion.OVULIPARO,44.45,44.45,2,3);
-		AnimalVertebrado gorrion = new GorrionComun("Plumas","Alas",2,"Herbivoro",
+		zoologico.agregarAnimal(animal);
+		//---------------
+		
+		animal = new GorrionComun("Plumas","Alas",2,"Herbivoro",
 				"Volar","Gorrion Comun",TipoReproduccion.OVIPARO,"Evaporation",21.082);
-		AnimalVertebrado perro = new Perro("Pelo","Patas",4,"Omnivoro","Caminar","Perro labrador",
+		zoologico.agregarAnimal(animal);
+		//---------------
+		
+		animal = new Perro("Pelo","Patas",4,"Omnivoro","Caminar","Perro labrador",
 				TipoReproduccion.VIVIPARO,"Agitarse",true,10);
-		AnimalVertebrado serpiente = new Serpiente("Escamas","Cola",1,"Carnivoro","Arrastrar",
+		zoologico.agregarAnimal(animal);
+		//---------------
+		
+		animal = new Serpiente("Escamas","Cola",1,"Carnivoro","Arrastrar",
 				"Serpiente",TipoReproduccion.OVIPARO,22.22,22.22,"Squamata");
-		
-		Zoologico zoologico = Zoologico.getInstancia(); 
-		
-		zoologico.agregarAnimal(frog);
-		zoologico.agregarAnimal(chameleon);
-		zoologico.agregarAnimal(gorrion);
-		zoologico.agregarAnimal(salmon);
-		zoologico.agregarAnimal(perro);
-		zoologico.agregarAnimal(serpiente);
+		zoologico.agregarAnimal(animal);
+		//---------------
 		
 		// interaccion con el teclado
 		@SuppressWarnings("resource")

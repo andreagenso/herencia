@@ -10,7 +10,7 @@ public abstract class AnimalVertebrado {
 	protected TipoReproduccion tipoReproduccion;
 	protected String tipoMobilidad; // caminar, nadar, volar, etc	
 	protected String nombre;	
-	protected String clasificacion;
+	protected String clasificacion; //NUEVO ATRIBUTO
 	
 	// constructor	
 	protected AnimalVertebrado(String tipoPiel, String tipoExtremidades,int numExtremidades, 

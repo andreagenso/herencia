@@ -18,6 +18,7 @@ public class Serpiente extends Reptil {
 
 				
 		System.out.println("");
+		System.out.println("   ~~~~~~~~          ~~~~~~~~~");
 		System.out.println("  /         \\       /         \\");
 		System.out.println(" /  /~~~~~\\  \\     /  /~~~~~\\  \\");
 		System.out.println(" |  |     |  |     |  |     |  |");
