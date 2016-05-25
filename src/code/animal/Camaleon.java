@@ -11,7 +11,7 @@ public class Camaleon extends Reptil {
 			double tempAmbiente, String ordenReptil) {
 		super(tipoPiel, tipoExtremidades, numExtremidades, tipoAlimentacion, tipoMobilidad,
 				nombre, tipoReproduccion, tempCuerpoActual, tempAmbiente,ordenReptil);
-		this.clasificacion = "CAMALEON";
+		this.clasificacion = "REPTIL";
 	}
 	
 	public void mostrarForma(){

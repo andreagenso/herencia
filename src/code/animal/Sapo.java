@@ -12,7 +12,7 @@ public class Sapo extends Anfibio {
 			double tempAmbiente, EstadoMetamorfosis estadoMetamorfosis) {
 		super(tipoPiel, tipoExtremidades, numExtremidades, tipoAlimentacion, tipoMobilidad,
 				nombre, tipoReproduccion, tempCuerpoActual, tempAmbiente, estadoMetamorfosis);
-		this.clasificacion = "SAPO";
+		this.clasificacion = "ANFIBIO";
 	}
 
 	public void mostrarForma(){				

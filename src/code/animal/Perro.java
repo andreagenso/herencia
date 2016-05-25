@@ -11,7 +11,7 @@ public class Perro extends Mamifero {
 			Boolean produceLeche,int nroPezones) {
 		super(tipoPiel, tipoExtremidades, numExtremidades, tipoAlimentacion,
 				tipoMobilidad, nombre, tipoReproduccion, eliminExcesoCalor,produceLeche, nroPezones);
-		this.clasificacion = "PERRO";
+		this.clasificacion = "MAMIFERO";
 	}
 	
 	@Override
